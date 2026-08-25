@@ -3733,12 +3733,25 @@ h3.title-divider {
   margin-top: 30px;
   padding-top: 0;
 }
+@media (min-width: 768px) {
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills > [class*="col-"] {
+    display: flex;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
 .skills-card {
   background: #F5F8FB;
   border: 1px solid #D8DFE7;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 15px;
+  height: 100%;
+  width: 100%;
 }
 .skills-heading {
   color: #2E356A;
