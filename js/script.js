@@ -113,124 +113,134 @@ $(document).ready(function() {
     });
   }
 
-    $('#btnShowVFProjects').on('click', function(e) {
+  /*
+   * "Go to project" button handlers
+   * Each handler scrolls to #work and navigates the #full-view flexslider to a specific slide index (0-based).
+   * The slide index corresponds to the position of the slide in the HTML (div.slide elements inside #full-view).
+   *
+   * HOW TO ADD A NEW "Go to project" BUTTON:
+   * 1. In index.html, add: <a href="#work" id="btnShowXxx" class="btn btn-xs btn-primary-light btn-square">Go to project</a>
+   * 2. Count the 0-based position of the target slide in the #full-view .slides div
+   * 3. Add a handler here: $('#btnShowXxx').on('click', function(e) { ... fullView.flexslider(INDEX); })
+   * 4. If you INSERT a new slide, increment ALL indices below that point by 1
+   *
+   * Current slide order (Aug 2026):
+   * 0=GPT-Middleware, 1=VF-MOC, 2=VF-SiteProvisioning, 3=URLShortener, 4=PermissionCenter,
+   * 5=VF-RESI, 6=TK-PIMS, 7=M-OnSite, 8=MEvents-Projects, 9=CryptoXL, 10=CarlGmbH,
+   * 11=MEvents-Intranet, 12=ETT, 13=DT-Design, 14=Vescore-PM, 15=Vescore-MN,
+   * 16=Vescore-FE, 17=BencerWeb2012, 18=BencerWeb2011, 19=BencerWeb2010,
+   * 20=Vescore-FU, 21=Vescore-IC, 22=TODI, 23=WhizzyTools-CD
+   */
+
+  $('#btnShowGPTMiddleware').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
-      fullView.flexslider(3);
+      fullView.flexslider(0);
     });
   })
 
-    $('#btnShowMOnSite').on('click', function(e) {
+  $('#btnShowVFMoc').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
-      fullView.flexslider(6);
+      fullView.flexslider(1);
     });
   })
 
+  $('#btnShowVFSiteProvisioning').on('click', function(e) {
+    var fullView = $('#full-view');
+    fullView.slideDown('slow', function() {
+      fullView.flexslider(2);
+    });
+  })
 
-    $('#btnShowMEventsProjects').on('click', function(e) {
+  $('#btnShowMOnSite').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(7);
     });
   })
-  
-    $('#btnShowCryptoXL').on('click', function(e) {
+
+  $('#btnShowMEventsProjects').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(8);
     });
   })
-  
-    $('#btnShowCarlGmbH').on('click', function(e) {
+
+  $('#btnShowCryptoXL').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(9);
     });
   })
 
-    $('#btnShowMEventsIntranet').on('click', function(e) {
+  $('#btnShowCarlGmbH').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(10);
     });
   })
-  
-    $('#btnShowEtt').on('click', function(e) {
+
+  $('#btnShowMEventsIntranet').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(11);
     });
   })
 
-
-  $('#btnShowDt').on('click', function(e) {
+  $('#btnShowEtt').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(12);
     });
   })
 
-  $('#btnShowPm').on('click', function(e) {
+  $('#btnShowDt').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(13);
     });
   })
 
-  $('#btnShowMn').on('click', function(e) {
+  $('#btnShowPm').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(14);
     });
   })
 
-  $('#btnShowBencerWeb2012').on('click', function(e) {
+  $('#btnShowMn').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
-      fullView.flexslider(16);
+      fullView.flexslider(15);
     });
   })
 
-  $('#btnShowBencerWeb2011').on('click', function(e) {
+  $('#btnShowBencerWeb2012').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(17);
     });
   })
 
-  $('#btnShowBencerWeb2010').on('click', function(e) {
+  $('#btnShowBencerWeb2011').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
       fullView.flexslider(18);
     });
   })
 
+  $('#btnShowBencerWeb2010').on('click', function(e) {
+    var fullView = $('#full-view');
+    fullView.slideDown('slow', function() {
+      fullView.flexslider(19);
+    });
+  })
+
   $('#btnShowWhizzyToolsCd').on('click', function(e) {
     var fullView = $('#full-view');
     fullView.slideDown('slow', function() {
-      fullView.flexslider(22);
-    });
-  })
-  
-  $('#btnShowBencerFlyer').on('click', function(e) {
-    var fullView = $('#full-view');
-    fullView.slideDown('slow', function() {
-      fullView.flexslider(24);
-    });
-  })
-
-  $('#btnShowSt').on('click', function(e) {
-    var fullView = $('#full-view');
-    fullView.slideDown('slow', function() {
-      fullView.flexslider(25)
-    });
-  })
-
-  $('#btnShowSj').on('click', function(e) {
-    var fullView = $('#full-view');
-    fullView.slideDown('slow', function() {
-      fullView.flexslider(26)
+      fullView.flexslider(23);
     });
   })
 
