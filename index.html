@@ -32,6 +32,7 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
 <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+<!-- Only 700 loaded globally. Skills use a separate @font-face defined in theme-style.css -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
 
 
@@ -82,7 +83,10 @@
     <!-- About text & photo -->
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-3 photo"> <img src="img/misc/profile.jpg" alt="My picture" class="img-responsive pull-center" /> </div>
+        <div class="col-sm-3 col-md-3 photo">
+          <img src="img/misc/profile.jpg" alt="My picture" class="img-responsive pull-center" />
+          <a href="download/KarstenHeldCV.pdf" class="btn btn-lg btn-primary-grad btn-download">Download CV <i class="fa fa-download"></i></a>
+        </div>
         <div class="col-sm-9 col-md-9 details">
           <div class="mscp-logo pull-right hidden-xs"><img src="img/misc/mscp-logo.png"/></div>
           <h2 class="primary-focus">Karsten Held</h2>
@@ -90,67 +94,44 @@
 			Certified Azure AI Engineer<br>SharePoint / M365 Specialist
 		  </h3>
           <p>
-A highly skilled and versatile AI consultant with over 20 years of experience in software development, SharePoint, Power Platform and M365 solutions. Currently leading the development of a market intelligence GenAI solution using Azure AI Foundry and SharePoint 
-frontend for Vattenfall. Proven track record of delivering solutions across diverse industries, including finance, telecommunications, and energy. With proficiency in solution architecture, full-stack development, and UX design. Adept at leading technical projects, providing 
-training, and offering third-level support, with certifications in Microsoft technologies. Fluency in German, English, and Hungarian.
+AI Engineer with 25+ years in software development and 3+ years shipping enterprise GenAI solutions at scale. Designed and shipped a market intelligence RAG platform achieving 90% factuality (vs 53% for Microsoft Copilot) at 1/3 the cost. Built enterprise search crawler pipelines rolled out to 5,000+ users, ingesting SharePoint content across multiple sites and domains. Full-stack sole-developer delivery: Python backends (Azure Functions, FastAPI), TypeScript/React frontends (SPFx), Azure AI infrastructure. Security hardening (Managed Identities, RBAC), automated evaluation, and production deployment. Fluent in German, English, and Hungarian.
 </p>
-          <a href="download/KarstenHeldCV.pdf" class="btn btn-lg btn-primary-grad">Download CV <i class="fa fa-download"></i></a>
-
         </div>
       </div>
-      <div class="row skills hidden-xs">
+      <div class="row skills">
         <div class="col-sm-4">
-          <div class="row">
-            <div class="col-sm-6 skillitem">SharePoint</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills " style="width:100%;">Expert</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">Azure AI Studio</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">Copilot Studio</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">VBA</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
-          </div>
-        </div>                        
-        <div class="col-sm-4">
-          <div class="row">
-            <div class="col-sm-6 skillitem">Power Apps</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:100%;">Expert</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">Power Automate</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:100%;">Expert</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">Azure Function Apps</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">Azure Runbooks</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:50%;">Basic</div></div></div>
+          <div class="skills-card">
+            <h4 class="skills-heading">Primary (daily use)</h4>
+            <ul class="skills-list">
+              <li>Python 3.12, FastAPI, Azure Functions</li>
+              <li>Azure OpenAI Service, Responses API, Vector Stores</li>
+              <li>Foundry IQ / Azure AI Search</li>
+              <li>RAG: chunking, retrieval, evaluation</li>
+              <li>TypeScript, React, Fluent UI, SPFx 1.23</li>
+              <li>Managed Identities, RBAC, MSAL.js</li>
+            </ul>
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="row">
-            <div class="col-sm-6 skillitem">TypeScript</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
+          <div class="skills-card">
+            <h4 class="skills-heading">Secondary (strong background)</h4>
+            <ul class="skills-list">
+              <li>SharePoint REST API, PnP/SP, Microsoft Graph</li>
+              <li>Azure App Service, Key Vault, Microsoft Entra ID</li>
+              <li>Power Apps, Dataverse, Power Automate</li>
+              <li>C# / .NET, SQL, Entity Framework</li>
+              <li>HTML5, CSS3, SCSS Modules, Webpack</li>
+            </ul>
           </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">C#</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">PowerShell / PnP</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 skillitem">Python</div>
-            <div class="col-sm-6 skillbar"><div class="progress progress-skills"><div class="progress-bar progress-bar-skills" style="width:75%;">Professional</div></div></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="skills-card">
+            <h4 class="skills-heading">Tertiary (available)</h4>
+            <ul class="skills-list">
+              <li>Node.js, PowerShell, Azure CLI</li>
+              <li>Azure DevOps Pipelines, Git/GitHub</li>
+              <li>httpx, BeautifulSoup4, Playwright</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -535,42 +516,32 @@ training, and offering third-level support, with certifications in Microsoft tec
     <div class="container">
       <h2>Services</h2>
       <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 service"> <i class="service-genai centered"></i>
-          <h3 class="bold">Copilots, GenAI / RAG Solutions</h3>
+        <div class="col-sm-6 col-md-6 col-lg-6 service"> <img src="img/services/microsoftfoundry.svg" class="service-icon centered" alt="Microsoft Foundry" />
+          <h3 class="bold">Microsoft Foundry (Azure AI Foundry)</h3>
           <p>
-			AI trainings and webinars. Implementation of Retrieval Augmented Generation solutions using Azure AI Studio and Copilot Studio. Model fine-tuning, evaluation, benchmarking.
-		  </p>
-        </div>	  
-
-	  <!--
-        <div class="col-sm-6 col-md-6 col-lg-6 service"> <i class="service-support centered"></i>
-          <h3 class="bold">M365 App &amp; 3rd Level Support</h3>
-          <p>
-			Maintenance of Microsoft 365 solutions: SharePoint, Power Apps, Power Automate, Copilot. System rollout, user communication, escalation management. Ticket analysis and reporting.
+			Automated evaluation pipelines, LLM-as-judge scoring, factuality/relevance/coherence metrics, prompt optimizations, evaluations, model comparison.
 		  </p>
         </div>
-	  -->
-        <div class="col-sm-6 col-md-6 col-lg-6 service"> <i class="service-sharepoint2 centered"></i>
-          <h3 class="bold">SharePoint Solutions</h3>
+        <div class="col-sm-6 col-md-6 col-lg-6 service"> <img src="img/services/genai.svg" class="service-icon centered" alt="Microsoft Copilot Ecosystem" />
+          <h3 class="bold">Microsoft Copilot Ecosystem</h3>
           <p>
-			Information architecture, solution design, document management systems, portals, Web Part development, integration with Azure Logic Apps and Power Automate.
-		</p>
+			Copilot extensibility, Copilot connectors, SharePoint Premium, custom RAG alternatives where Copilot falls short.
+		  </p>
         </div>
 	  </div>
 	  <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 service"> <i class="service-powerplatform centered"></i>
-          <h3 class="bold">Microsoft 365 App Development</h3>
+        <div class="col-sm-6 col-md-6 col-lg-6 service"> <img src="img/services/azure-ai-search.svg" class="service-icon centered" alt="Foundry IQ" />
+          <h3 class="bold">Foundry IQ (Azure AI Search)</h3>
           <p>
-			Business process automation, Power App development, extranet solutions with Power Pages, AI Builder, Microsoft Dataverse backends, Power Apps Component Framework, Custom Connectors.
+			Custom indexes, hybrid retrieval (keyword + vector), metadata enrichment, SharePoint connectors, Copilot Retrieval API integration.
 		  </p>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 service"> <i class="service-m365 centered"></i>
-          <h3 class="bold">Microsoft 365 Consulting</h3>
+        <div class="col-sm-6 col-md-6 col-lg-6 service"> <img src="img/services/sharepointlogo.svg" class="service-icon centered" alt="SharePoint Solutions" />
+          <h3 class="bold">SharePoint Solutions</h3>
           <p>
-			M365 governance, intranet solutions, migration projects, data loss prevention, retention policies, best practices, webinars, user training, 3rd level support.
+			Information Architecture, Solution Design, Custom Collaboration Sites, Document Management Systems, Portals, Web Part Development, Integration with Azure Logic Apps or Power Automate.
 		  </p>
         </div>
-		
       </div>
     </div>
   </section>
@@ -592,10 +563,16 @@ training, and offering third-level support, with certifications in Microsoft tec
           <ul>
             <li class="timeline-item right">
               <img src="img/timeline/2019-vattenfall.png" data-js="unveil-auto" data-src="img/timeline/2019-vattenfall.png" data-src-retina="img/timeline/2019-vattenfall@2x.png" class="timeline-item-photo img-bg-primary img-responsive" alt="timeline photo" />
+              <h4 class="timeline-item-date">OCT 2024 - MAR 2026</h4>
+              <h5 class="timeline-item-role">External Azure AI Engineer @ <a href="https://www.vattenfall.de/">Vattenfall</a>, Berlin</h5>
+              <p class="timeline-item-description">Enterprise Search SharePoint Connector (crawler pipeline, Azure AI Search, metadata enrichment). SharePoint GPT Extensions (RAG Chat, AI metadata extraction, 20+ Fluent UI components). Lookout GPT market intelligence platform (90% factuality, 4x token reduction). Sole developer.</p>
+              <a href="#work" id="btnShowVFProjects" class="btn btn-xs btn-primary-light btn-square">Go to project</a>
+            </li>
+            <li class="timeline-item left">
+              <img src="img/timeline/2019-vattenfall.png" data-js="unveil-auto" data-src="img/timeline/2019-vattenfall.png" data-src-retina="img/timeline/2019-vattenfall@2x.png" class="timeline-item-photo img-bg-primary img-responsive" alt="timeline photo" />
               <h4 class="timeline-item-date">APR 2021 - OCT 2024</h4>
               <h5 class="timeline-item-role">External SharePoint Developer @ <a href="https://www.vattenfall.de/">Vattenfall</a>, Berlin</h5>
               <p class="timeline-item-description">Development of SharePoint solutions (Web Parts and backend jobs), 3rd level support, SharePoint governance, Power App development.</p>
-              <a href="#work" id="btnShowVFProjects" class="btn btn-xs btn-primary-light btn-square">Go to project</a>
             </li>
             <li class="timeline-item left">
               <img src="img/timeline/2019-vattenfall.png" data-js="unveil-auto" data-src="img/timeline/2019-vattenfall.png" data-src-retina="img/timeline/2019-vattenfall@2x.png" class="timeline-item-photo img-bg-primary img-responsive" alt="timeline photo" />
@@ -829,7 +806,7 @@ training, and offering third-level support, with certifications in Microsoft tec
             <p>
               Karsten Held<br>
               Rothenburger Strasse 32<br>
-              D-10099 DRESDEN
+              D-01099 DRESDEN
             </p>
           </address>
         </div>

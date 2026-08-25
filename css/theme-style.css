@@ -3271,8 +3271,9 @@ h3.title-divider {
   background-color: #4078B0;
   color: #FDFDFD;
 }
-.about .photo img {
-  max-width: 140px;
+.about .photo img.img-responsive {
+  width: 100%;
+  max-width: 260px;
   display: inline-block;
   box-shadow: 0 0 0 6px #fff;
 }
@@ -3685,6 +3686,95 @@ h3.title-divider {
 .service-mobile {
   background-image: url('../img/services/mobiledev.svg');
   background-size: 100px 100px;
+}
+.service-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.service-icon.centered {
+  margin: 0 auto;
+}
+/* Open Sans Condensed Light - loaded under unique name to avoid affecting global font */
+@font-face {
+  font-family: 'OSC-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://fonts.gstatic.com/s/opensanscondensed/v24/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMRw.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/s/opensanscondensed/v24/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+.about .photo {
+  text-align: center;
+}
+.btn-download {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin: 15px auto 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  white-space: normal;
+  box-sizing: border-box;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .about .photo img.img-responsive {
+    max-width: 140px;
+  }
+  .btn-download {
+    display: block;
+    width: auto;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.skills {
+  margin-top: 30px;
+  padding-top: 0;
+}
+.skills-card {
+  background: #F5F8FB;
+  border: 1px solid #D8DFE7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.skills-heading {
+  color: #2E356A;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #B0BEC5;
+  text-align: left;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.skills-list li {
+  font-family: 'OSC-Light', 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333333;
+  padding: 3px 0;
+  padding-left: 12px;
+  position: relative;
+}
+.skills-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: #A3BFE8;
 }
 @media (min-width: 768px) {
   .services {
