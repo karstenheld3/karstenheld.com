@@ -2163,7 +2163,7 @@ h3.title-divider {
   }
 }
 .ie8 .navbar-brand h1 a {
-  background: url('../img/misc/icon_logo-ie.png') center center no-repeat;
+  background: url('../img/misc/icon_logo-ie.jpg') center center no-repeat;
 }
 /* @section 2.7 utilities */
 .i-float:before,
@@ -3632,12 +3632,12 @@ h3.title-divider {
   margin: 0 auto;
 }
 .service-agile {
-  background-image: url('../img/services/service-agile.png');
+  background-image: url('../img/services/service-agile.jpg');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-agile {
-    background-image: url('../img/services/service-agile@2x.png');
+    background-image: url('../img/services/service-agile@2x.jpg');
     background-size: 100px 100px;
   }
 }
@@ -3658,12 +3658,12 @@ h3.title-divider {
   background-size: 100px 100px;
 }
 .service-backend {
-  background-image: url('../img/services/service-backend.png');
+  background-image: url('../img/services/service-backend.jpg');
   background-size: 100px 100px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .service-backend {
-    background-image: url('../img/services/service-backend@2x.png');
+    background-image: url('../img/services/service-backend@2x.jpg');
     background-size: 100px 100px;
   }
 }
@@ -3828,7 +3828,7 @@ h3.title-divider {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-image: url('../img/misc/bg_timeline-line.png');
+  background-image: url('../img/misc/bg_timeline-line.jpg');
   background-size: 2px auto;
   background-repeat: repeat-y;
   background-position: center top;
@@ -3847,7 +3847,7 @@ h3.title-divider {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .timeline {
-    background-image: url('../img/misc/bg_timeline-line@2x.png');
+    background-image: url('../img/misc/bg_timeline-line@2x.jpg');
     background-size: 2px auto;
   }
 }
