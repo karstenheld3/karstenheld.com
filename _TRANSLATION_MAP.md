@@ -3,6 +3,50 @@ Each line: LOCATION | ORIGINAL TEXT
 > DE: German translation from karstenheld.de/index.html
 Do not translate proper nouns, company names, product names, or technical terms.
 
+TERM AND TECHNOLOGY TRANSLATION TABLE
+Source: KarstenHeldCV-2026-AIEngineer_DE.md (authoritative)
+
+Terms (EN -> DE):
+- factuality -> Faktentreue
+- evaluation -> Evaluierung
+- production deployment -> produktiver Betrieb
+- security hardening -> Sicherheitshärtung
+- at scale -> im großen Maßstab
+- designed and shipped -> Konzeption und Umsetzung
+- AI Engineer -> AI Engineer (keep EN)
+- AI infrastructure -> AI-Infrastruktur (keep "AI" not "KI" in compounds)
+- AI-powered -> KI-gestützt
+- AI solution -> KI-Lösung
+- GenAI solutions -> GenAI-Lösungen
+- enterprise search -> Enterprise Search (keep EN)
+- crawler pipeline -> Crawler-Pipeline
+- full-stack -> Full-Stack
+- sole developer -> Einzelentwickler
+- multi-site deployment -> Multi-Site-Deployment
+- nightly crawler -> nächtlicher Crawler
+- permission-scoped access -> berechtigungsgesteuerter Zugriff
+- site-scoped configuration -> Site-bezogene Konfiguration
+- streaming responses -> Streaming-Antworten
+- model comparison -> Modellvergleich
+- prompt optimization -> Prompt-Optimierung
+- metadata enrichment -> Metadatenanreicherung
+- approval workflow -> Genehmigungsworkflow
+- connectors -> Konnektoren (not "Connectors")
+- hybrid retrieval -> hybride Suche
+- document management systems -> Dokumentenmanagementsysteme (one word)
+- collaboration sites -> Teamwebsites
+- ecosystem -> Ökosystem
+
+Technologies (keep EN, no translation):
+- Azure OpenAI Service, Responses API, Vector Stores
+- Foundry IQ (Azure AI Search), Microsoft Foundry (Azure AI Foundry)
+- Managed Identities, RBAC, MSAL.js, Key Vault
+- SPFx, Fluent UI, React, TypeScript, FastAPI
+- Power Automate, Dataverse, Microsoft Graph
+- SharePoint, SharePoint Premium, Copilot
+- LLM-as-Judge, RAG, Chunking, Retrieval
+- Python, C#, .NET, Node.js, PowerShell
+
 HEAD
 title | Karsten Held Homepage
 > DE: Karsten Held Homepage
@@ -29,7 +73,7 @@ about-title | Certified Azure AI Engineer
 about-title-2 | SharePoint / M365 Specialist
 > DE: SharePoint / M365 Spezialist
 about-bio | AI Engineer with 25+ years in software development and 3+ years shipping enterprise GenAI solutions at scale. Designed and shipped a market intelligence RAG platform achieving 90% factuality (vs 53% for Microsoft Copilot) at 1/3 the cost. Built enterprise search crawler pipelines rolled out to 5,000+ users, ingesting SharePoint content across multiple sites and domains. Delivered Python backends, TypeScript/React frontends, Azure AI infrastructure. Azure security hardening, automated evaluation, and production deployment.
-> DE: KI-Ingenieur mit über 25 Jahren Erfahrung in der Softwareentwicklung und über 3 Jahren Bereitstellung von Enterprise-GenAI-Lösungen im großen Maßstab. Entwurf und Auslieferung einer Market-Intelligence-RAG-Plattform mit 90% Faktizität (vs. 53% für Microsoft Copilot) bei 1/3 der Kosten. Aufbau von Enterprise-Search-Crawler-Pipelines für über 5.000 Nutzer mit SharePoint-Inhalten über mehrere Sites und Domänen. Python-Backends, TypeScript/React-Frontends, Azure-KI-Infrastruktur. Azure-Sicherheitshärtung, automatisierte Evaluation und Produktivdeployment.
+> DE: AI Engineer mit über 25 Jahren Softwareentwicklung und über 3 Jahren Enterprise GenAI Praxis. Konzeption und Umsetzung einer Market-Intelligence-RAG-Plattform mit 90 % Faktentreue (vs. 53 % für Microsoft Copilot) bei einem Drittel der Kosten. Enterprise Search Crawler Pipelines für über 5.000 Nutzer zur Erfassung von SharePoint-Inhalten über mehrere Sites und Domänen. Python-Backends, TypeScript/React-Frontends, Azure-AI-Infrastruktur. Sicherheitshärtung, automatisierte Evaluierung und produktiver Betrieb.
 about-btn | Download CV
 > DE: Lebenslauf
 
@@ -37,7 +81,7 @@ SKILLS
 skills-h1 | Primary (daily use)
 > DE: Primär (täglicher Einsatz)
 skills-h2 | Secondary (strong background)
-> DE: Sekundär (fundiertes Wissen)
+> DE: Sekundär (fundierte Erfahrung)
 skills-h3 | Tertiary (available)
 > DE: Tertiär (verfügbar)
 skills-1-1 | Python 3.12, FastAPI, Azure Functions
@@ -47,7 +91,7 @@ skills-1-2 | Azure OpenAI Service, Responses API, Vector Stores
 skills-1-3 | Foundry IQ / Azure AI Search
 > DE: Foundry IQ / Azure AI Search
 skills-1-4 | RAG: chunking, retrieval, evaluation
-> DE: RAG: Chunking, Retrieval, Evaluation
+> DE: RAG: Chunking, Retrieval, Evaluierung
 skills-1-5 | TypeScript, React, Fluent UI, SPFx 1.23
 > DE: TypeScript, React, Fluent UI, SPFx 1.23
 skills-1-6 | Managed Identities, RBAC, MSAL.js
@@ -99,7 +143,7 @@ work-1-p1 | Development of a Power App with approval workflow.
 work-1-p2 | Input of heating installation projects that deviate from the specification.
 > DE: Eingabe von Heizungs-Installationsprojekten, welche von der Vorgabe abweichen.
 work-1-p3 | Multidimensional risk assessment with detailed risk matrix.
-> DE: Mehrdimesionale Risikoeinschätzung mit detaillierter Risikomatrix.
+> DE: Mehrdimensionale Risikoeinschätzung mit detaillierter Risikomatrix.
 work-1-p4 | Multistage approval workflow (Power Automate) with reminders and escalation.
 > DE: Mehrstufiger Genehmigungsworkflow (Power Automate) mit Erinnerungen und Eskalation.
 work-1-p5 | User-friendly navigation with the possibility of editing and evaluating reports.
@@ -451,19 +495,19 @@ services-heading | Services
 svc-1-title | Microsoft Foundry (Azure AI Foundry)
 > DE: Microsoft Foundry (Azure AI Foundry)
 svc-1-text | Automated evaluation pipelines, LLM-as-judge scoring, factuality/relevance/coherence metrics, prompt optimizations, evaluations, model comparison.
-> DE: Automatisierte Evaluierungspipelines, LLM-as-Judge-Scoring, Faktizität-/Relevanz-/Kohärenz-Metriken, Prompt-Optimierungen, Evaluationen, Modellvergleich.
+> DE: Automatisierte Evaluierungspipelines, LLM-as-Judge-Bewertung, Faktentreue-/Relevanz-/Kohärenz-Metriken, Prompt-Optimierungen, Evaluierungen, Modellvergleich.
 svc-2-title | Microsoft Copilot Ecosystem
-> DE: Microsoft Copilot Ecosystem
+> DE: Microsoft Copilot Ökosystem
 svc-2-text | Copilot extensibility, Copilot connectors, SharePoint Premium, custom RAG alternatives where Copilot falls short.
-> DE: Copilot-Erweiterbarkeit, Copilot-Connectors, SharePoint Premium, maßgeschneiderte RAG-Alternativen wo Copilot nicht ausreicht.
+> DE: Copilot-Erweiterbarkeit, Copilot-Konnektoren, SharePoint Premium, maßgeschneiderte RAG-Alternativen, wo Copilot nicht ausreicht.
 svc-3-title | Foundry IQ (Azure AI Search)
 > DE: Foundry IQ (Azure AI Search)
 svc-3-text | Custom indexes, hybrid retrieval (keyword + vector), metadata enrichment, SharePoint connectors, Copilot Retrieval API integration.
-> DE: Benutzerdefinierte Indizes, hybrides Retrieval (Keyword + Vektor), Metadaten-Anreicherung, SharePoint-Connectors, Copilot Retrieval API Integration.
+> DE: Benutzerdefinierte Indizes, hybride Suche (Keyword + Vektor), Metadatenanreicherung, SharePoint-Konnektoren, Copilot Retrieval API Integration.
 svc-4-title | SharePoint Solutions
 > DE: SharePoint-Lösungen
 svc-4-text | Information Architecture, Solution Design, Custom Collaboration Sites, Document Management Systems, Portals, Web Part Development, Integration with Azure Logic Apps or Power Automate.
-> DE: Informationsarchitektur, Lösungsdesign, Kollaborationssites, Dokumentenmanagement-Systeme, Portale, Web-Part-Entwicklung, Integration mit Azure Logic Apps oder Power Automate.
+> DE: Informationsarchitektur, Lösungsdesign, Teamwebsites, Dokumentenmanagementsysteme, Portale, Web-Part-Entwicklung, Integration mit Azure Logic Apps oder Power Automate.
 
 EXPERIENCE SECTION
 exp-heading | Experience
@@ -482,7 +526,7 @@ exp-1-date | OCT 2024 - MAR 2026
 exp-1-role | External Azure AI Engineer @ Vattenfall, Berlin
 > DE: Externer Azure AI Engineer @ Vattenfall, Berlin
 exp-1-desc | SharePoint GPT Middleware: Python FastAPI RAG platform bridging SharePoint content with OpenAI vector stores. Multi-domain crawler, streaming job management, interactive admin UI. Sole developer.
-> DE: SharePoint GPT Middleware: Python-FastAPI-RAG-Plattform zur Verknüpfung von SharePoint-Inhalten mit OpenAI Vector Stores. Multi-Domain-Crawler, Streaming-Job-Management, interaktive Admin-Oberfläche. Alleiniger Entwickler.
+> DE: SharePoint GPT Middleware: Python-FastAPI-RAG-Plattform zur Verknüpfung von SharePoint-Inhalten mit OpenAI Vector Stores. Multi-Domain-Crawler, Streaming-Job-Management, interaktive Admin-Oberfläche. Einzelentwickler.
 exp-1-btn | Go to project
 > DE: Zum Projekt
 
@@ -673,7 +717,7 @@ exp-23-btn | Go to project
 > DE: Zum Projekt
 
 exp-24-date | Mar 2009 - Apr 2009
-> DE: Mar 2009 - Apr 2009
+> DE: Mrz 2009 - Apr 2009
 exp-24-role | Freelance Developer at financial.com, Munich
 > DE: Freiberuflicher Entwickler bei financial.com, München
 exp-24-desc | Connection of an Excel add-in (VBA) to the Thomson-Reuters terminal.
@@ -703,7 +747,7 @@ exp-27-desc | Management of globally invested funds (Value, Private Equity). Dev
 > DE: Management von global investierenden Fonds (Value, Private Equity). Entwicklung von Trading Tools (Excel, VBA, C#) mit Bloomberg.
 
 exp-28-date | Jan 2001 - Dec 2003
-> DE: Jan 2001 - Dec 2003
+> DE: Jan 2001 - Dez 2003
 exp-28-role | Java/C# Developer @ vescore.com
 > DE: Java/C# Entwickler @ vescore.com
 exp-28-desc | Design & implementation of the MarketNavigator (Java Swing, WebStart) for the visualization of model data.
@@ -712,7 +756,7 @@ exp-28-btn | Go to project
 > DE: Zum Projekt
 
 exp-29-date | Mar 2000 - Dec 2000
-> DE: Mar 2000 - Dec 2000
+> DE: Mrz 2000 - Dez 2000
 exp-29-role | Developer at Dr. Grob & Partner
 > DE: Entwickler bei Dr. Grob & Partner
 exp-29-desc | Prototype of a structure management system (VB6) based on the Swiss structure database KUBA.
@@ -729,10 +773,10 @@ contact-heading | Contact
 > DE: Kontakt
 contact-address-name | Karsten Held
 > DE: Karsten Held
-contact-address-street | Rothenburger Strasse 32
-> DE: Rothenburger Strasse 32
-contact-address-city | D-01099 DRESDEN
-> DE: D-01099 DRESDEN
+contact-address-street | Av. 5 de Outubro, 53, 1-D
+> DE: Av. 5 de Outubro, 53, 1-D
+contact-address-city | 8000-077 Faro, Portugal
+> DE: 8000-077 Faro, Portugal
 contact-phone | +49 176 70861679
 > DE: +49 176 70861679
 contact-email | karstenheld3@gmail.com
